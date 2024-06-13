@@ -1,0 +1,363 @@
+/* Style de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding-top: 60px; /* Ajuster la valeur pour compenser la hauteur du header fixe */
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+header {
+    background-color: #E6B823;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-toggle span {
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-toggle span:hover {
+    color: #750a0a;
+    transform: scale(1.2);
+}
+
+.logo-alderin {
+    width: 120px;
+    height: auto;
+}
+
+.hero, .about {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/content/alderin-tapisserie/images_tapisserie/backgroundalderin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+}
+
+.about {
+    background-image: url('/content/alderin-tapisserie/images_tapisserie/fondalderin2.jpg');
+}
+
+.portfolio {
+    background-image: url('/content/alderin-tapisserie/images_tapisserie/wood-pattern.png');
+}
+
+.about h2 {
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.outlined-text {
+    font-size: 52px;
+    margin: 0;
+    color: #E6B823;
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
+.brand {
+    width: 500px;
+    height: auto;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.barre {
+    display: flex;
+    white-space: nowrap;
+    justify-content: center;
+    position: relative;
+    left: -10px;
+}
+
+.barre div:hover {
+    background-color: #b38e18;
+}
+
+.service {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.service a:hover {
+    text-decoration: underline;
+}
+
+.part {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.part a:hover {
+    text-decoration: underline;
+}
+
+.services {
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px;
+    color: #E6B823;
+    margin-bottom: 20px;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    position: relative;
+    width: 30%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.image-container img:hover ~ .overlay-text {
+    transform: scale(1.05);
+    height: 40px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 40px;
+}
+
+.search-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    background-color: #fdc201;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form button:hover {
+    background-color: #a07b00;
+}
+
+.search-form button i {
+    margin: 0;
+}
+
+.barre .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    top: 100%;
+    left: 0;
+    width: 200px;
+}
+
+.barre .menu a {
+    padding: 10px;
+    color: #E6B823;
+    white-space: nowrap;
+    border-bottom: 1px solid #ddd;
+}
+
+.barre .menu a:last-child {
+    border-bottom: none;
+}
+
+.barre .part:hover .menu {
+    display: flex;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ffc400;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #b18700;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .barre {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .menu {
+        position: static;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+.partos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}

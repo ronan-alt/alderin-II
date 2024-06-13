@@ -1,0 +1,9 @@
+.container {
+    background-image: url('/content/alderin-tapisserie/images_tapisserie/collage-alderin.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
