@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Alderin, tapisserie ameublement, restauration, renovation, travail du cuir, tissu, partenaires">
+    <meta name="description" content="Alderin, expert en tapisserie d'ameublement, propose des services de restauration, rénovation, et travail du cuir et du tissu pour particuliers et professionnels.">
     <title>ALDERIN - TAPISSERIE AMEUBLEMENT</title>
     <link rel="stylesheet" href="../alderin-tapisserie/styles_tapisserie/style.css">
     <script defer src="scripts_tapisserie/main.js"></script>
@@ -12,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <div class="menu-toggle">
+            <div class="menu-toggle" role="button" aria-label="Toggle menu">
                 <span>&#9776;</span>
             </div>
             <div class="logo">
@@ -29,8 +30,8 @@
             </div>
             <div class="search-bar">
                 <form class="search-form" action="search_results.html" method="get">
-                    <input type="text" name="q" placeholder="Rechercher...">
-                    <button type="submit"><i class="fas fa-search"></i></button>
+                    <input type="text" name="q" placeholder="Rechercher..." aria-label="Rechercher">
+                    <button type="submit" aria-label="Search"><i class="fas fa-search"></i></button>
                 </form>
             </div>
         </nav>
@@ -87,7 +88,7 @@
         <section id="portfolio" class="portfolio">
             <h2 class="real">Nos réalisations</h2>
             <div class="gallery-container">
-                <button class="arrow left-arrow" onclick="prevSlide()">&#10094;</button>
+                <button class="arrow left-arrow" onclick="prevSlide()" aria-label="Previous Slide">&#10094;</button>
                 <div class="gallery">
                     <div class="image-container">
                         <a href="/content/alderin-tapisserie/front_end_tapisserie/gallery-1.html">
@@ -108,17 +109,19 @@
                         </a>
                     </div>
                 </div>
-                <button class="arrow right-arrow" onclick="nextSlide()">&#10095;</button>
+                <button class="arrow right-arrow" onclick="nextSlide()" aria-label="Next Slide">&#10095;</button>
             </div>
         </section>
         <section id="partenaires" class="partenaires">
             <h2 class="editeur">Éditeur de Tissus, Catalogues et Fournisseurs</h2>
-            <a href="http://www.casamance.com/">Casamance</a>
-            <a href="https://leobert.fr/">Leobert</a>
-            <a href="https://nobilis.fr/">Nobilis</a>
-            <a href="https://cotte-martinon.com/">Cotte-Martinon</a>
-            <a href="https://www.houles.com/FR-fr/">Houles</a>
-            <a href="https://lelievreparis.com/">Le lièvre Paris</a>
+            <ul>
+                <li><a href="http://www.casamance.com/">Casamance</a></li>
+                <li><a href="https://leobert.fr/">Leobert</a></li>
+                <li><a href="https://nobilis.fr/">Nobilis</a></li>
+                <li><a href="https://cotte-martinon.com/">Cotte-Martinon</a></li>
+                <li><a href="https://www.houles.com/FR-fr/">Houles</a></li>
+                <li><a href="https://lelievreparis.com/">Le lièvre Paris</a></li>
+            </ul>
         </section>
         <section id="contact" class="contact">
             <h2>Contactez-nous</h2>
