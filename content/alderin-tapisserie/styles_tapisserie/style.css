@@ -20,7 +20,7 @@ a {
 
 header {
     background-color: #E6B823;
-    padding: 10px 20px;
+    padding: 20px 40px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,7 +31,7 @@ nav {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
 }
 
@@ -39,7 +39,6 @@ nav {
     font-size: 24px;
     color: #FFFFFF;
     cursor: pointer;
-    margin-right: 20px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -119,18 +118,19 @@ section {
     white-space: nowrap;
     justify-content: center;
     position: relative;
-    left: -10px;
+    align-items: center;
+    gap: 20px;
 }
 
 .barre div:hover {
     background-color: #b38e18;
 }
 
-.service {
+.barre .service {
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     margin: 5px;
     display: flex;
     flex-wrap: wrap;
@@ -324,6 +324,10 @@ button:hover {
     background-color: #b18700;
 }
 
+.search-bar {
+    margin-left: auto; /* Pushes the search bar to the right */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .barre {
@@ -348,6 +352,11 @@ button:hover {
     .menu-toggle {
         display: block;
     }
+
+    .search-bar {
+        margin-left: 0; /* Reset margin for mobile view */
+        margin-top: 10px; /* Add space between search bar and menu */
+    }
 }
 
 .partos {
@@ -361,3 +370,5 @@ button:hover {
     justify-content: center;
     position: absolute;
 }
+
+
