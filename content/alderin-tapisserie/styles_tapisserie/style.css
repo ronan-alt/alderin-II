@@ -62,18 +62,18 @@ nav {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/content/alderin-tapisserie/images_tapisserie/backgroundalderin.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../alderin-tapisserie/images_tapisserie/backgroundalderin.jpg');
     background-size: cover;
     background-position: center;
     background-blend-mode: darken;
 }
 
 .about {
-    background-image: url('/content/alderin-tapisserie/images_tapisserie/fondalderin2.jpg');
+    background-image: url('../alderin-tapisserie/images_tapisserie/fondalderin2.jpg');
 }
 
 .portfolio {
-    background-image: url('/content/alderin-tapisserie/images_tapisserie/wood-pattern.png');
+    background-image: url('../alderin-tapisserie/images_tapisserie/wood-pattern.png');
 }
 
 .about h2 {
